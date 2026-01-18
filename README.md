@@ -1,62 +1,61 @@
-# Aura - Premium Dijital Saat 🕒
+# Aura - Premium Dijital Saat v1.0.0
 
-Aura, modern estetiği fütüristik özelliklerle birleştiren, Python ve CustomTkinter ile geliştirilmiş premium bir masaüstü dijital saat uygulamasıdır.
+Aura, Python ve CustomTkinter kullanılarak geliştirilmiş, modern, lüks ve kullanıcı dostu bir dijital saat uygulamasıdır. Şık bir "Glassmorphic" tasarım anlayışıyla geliştirilen uygulama, hem estetik hem de fonksiyonelliği bir arada sunar.
 
-## ✨ Özellikler
+![Aura Clock Preview](https://via.placeholder.com/850x570/121212/3B8ED0?text=Aura+Premium+Clock)
 
-- **Modern Tasarım:** Şık, minimalist ve özelleştirilebilir glassmorphic arayüz.
-- **Dinamik Temalar:** 6 farklı premium renk paleti (Midnight Sky, Forest Edge, Sunset Glow, vb.).
-- **Akıllı Araçlar:**
-  - **Alarm:** Sesli uyarı sistemi.
-  - **Pomodoro Zamanlayıcı:** Odaklanma seansları için optimize edilmiş sayaç.
-  - **Dünya Saatleri:** Farklı şehirlerin anlık zaman takibi.
-- **Hava Durumu:** Konum bazlı anlık hava durumu bilgisi (wttr.in entegrasyonu).
-- **Otomatik Konum:** IP tabanlı şehir algılama.
-- **Sistem Tepsisi (Tray):** Arka planda çalışma ve hızlı erişim.
-- **Özelleştirme:** Şeffaflık ayarı, "Her Zaman Üstte" modu ve Koyu/Aydınlık tema desteği.
+## 🌟 Özellikler
 
-## 🚀 Kurulum
+- **Modern Tasarım:** Tamamen özelleştirilebilir, premium kart tabanlı arayüz.
+- **Dinamik Temalar:** 6 farklı lüks renk paleti (Midnight Sky, Forest Edge, Sunset Glow, Royal Purple, Crimson Red, Silver Slate).
+- **Otomatik Konum & Hava Durumu:** IP tabanlı konum algılama ve wttr.in üzerinden anlık Türkçe hava durumu bilgisi.
+- **Pomodoro Zamanlayıcı:** Odaklanma sürelerinizi yönetmek için şık bir zamanlayıcı.
+- **Gelişmiş Alarm:** Basit ve etkili alarm sistemi.
+- **Dünya Saatleri:** Seçkin dünya şehirlerinin saatlerini anlık takip edin.
+- **Sistem Tepsisi (Tray) Desteği:** Uygulamayı kapatmadan arka planda çalıştırın.
+- **Yüksek Özelleştirme:** Şeffaflık ayarı, "Her Zaman Üstte" modu ve Koyu/Aydınlık tema desteği.
 
-Projeyi yerel makinenizde çalıştırmak için:
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- Python 3.11+
+- Pip paket yöneticisi
+
+### Adımlar
 
 1. Depoyu klonlayın:
    ```bash
    git clone https://github.com/Memati8383/dijital-saat.git
+   cd dijital-saat
    ```
 2. Gerekli kütüphaneleri yükleyin:
    ```bash
-   pip install customtkinter pillow requests pystray
+   pip install customtkinter requests pillow pystray
    ```
 3. Uygulamayı başlatın:
    ```bash
-   python 1.py
+   python main.py
    ```
 
-## 📦 EXE Oluşturma (Build)
+## �️ EXE Oluşturma
 
 Uygulamayı tek bir `.exe` dosyası haline getirmek için PyInstaller kullanabilirsiniz:
 
-1. PyInstaller'ı yükleyin:
+1. PyInstaller yükleyin:
    ```bash
    pip install pyinstaller
    ```
 2. Aşağıdaki komutu terminalde çalıştırın:
-
    ```bash
-   pyinstaller --noconsole --onefile --name "AuraClock" --collect-all customtkinter --add-data "clock_settings.json;." 1.py
+   pyinstaller --noconfirm --onefile --windowed --name "AuraClock" --add-data "C:/Users/USER/AppData/Local/Programs/Python/Python314/Lib/site-packages/customtkinter;customtkinter/" main.py
    ```
-
-   _Not: `--noconsole` terminalin açılmasını engeller, `--onefile` her şeyi tek bir dosyada toplar._
-
-3. Oluşturulan dosya `dist` klasörü içinde yer alacaktır.
-
-## 🛠️ Kullanılan Teknolojiler
-
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) - Modern UI bileşenleri.
-- [Pillow](https://python-pillow.org/) - Gelişmiş resim işleme ve tray ikon üretimi.
-- [wttr.in](https://wttr.in/) - Ücretsiz hava durumu servisi.
-- [ip-api.com](https://ip-api.com/) - Coğrafi konum servisi.
+   _Not: CustomTkinter'ın yolunu sisteminize göre kontrol ediniz._
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+Bu proje MIT lisansı ile lisanslanmıştır.
+
+---
+
+Geliştiren: **Memati8383**
