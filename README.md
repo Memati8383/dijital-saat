@@ -2,7 +2,7 @@
 
 Aura, Python ve CustomTkinter kullanılarak geliştirilmiş, modern, lüks ve kullanıcı dostu bir dijital saat uygulamasıdır. Şık bir "Glassmorphic" tasarım anlayışıyla geliştirilen uygulama, hem estetik hem de fonksiyonelliği bir arada sunar.
 
-![Aura Clock Preview](https://via.placeholder.com/850x570/121212/3B8ED0?text=Aura+Premium+Clock)
+![Aura Clock Preview](aura_icon.png)
 
 ## 🌟 Özellikler
 
